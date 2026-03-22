@@ -4,6 +4,10 @@ const app = express();
 const port = process.env.PORT || 5000;
 const connectDB = require('./config/database');
 
+app.use(express.json());
+const fileUpload = require("./src/routes/upload")
+app.use('/upload', fileUpload);
+
 
 //database connection
 connectDB()
