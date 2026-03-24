@@ -28,7 +28,8 @@ const formatData = (data) => {
 
   return data.map((row) => ({
     policyNumber: row["Policy Number"] || row.policy_number,
-    firstName : row.firstname,
+    firstName : row['firstname'] || row.firstname,
+    email: row['email'] || row.email,
     agent: row["Agent"] || row.agent,
     account: row["Account"] || row.account_name,
     carrier: row["Carrier"] || row.company_name,
