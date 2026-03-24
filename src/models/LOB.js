@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const lobSchema = new mongoose.Schema({
-  categoryName: String
+  name: String
 });
 
 const lob = mongoose.model('LOB', lobSchema);

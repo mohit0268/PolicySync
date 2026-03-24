@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const carrierSchema = new mongoose.Schema({
-  companyName: String
+  name: {type:String}
 });
 
 const Carrier = mongoose.model('Carrier', carrierSchema);

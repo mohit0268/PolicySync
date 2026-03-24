@@ -7,7 +7,6 @@ const policySchema = mongoose.Schema({
     },
     policyHolderName: {
         type: String,
-        required: true,
     },
     userId: {
         type: mongoose.Schema.Types.ObjectId,
